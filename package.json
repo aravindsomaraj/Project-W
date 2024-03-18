@@ -3,10 +3,10 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-      "dev": "next dev",
-      "build": "next build && next export",
-      "start": "next start"
-    },
+        "dev": "export NODE_OPTIONS=--openssl-legacy-provider && next dev",
+        "build": "export NODE_OPTIONS=--openssl-legacy-provider && next export",
+        "start": "export NODE_OPTIONS=--openssl-legacy-provider && next start"
+      },
     "dependencies": {
       "next": "10.2.3",
       "react": "17.0.2",
